@@ -3,7 +3,7 @@ var app = angular.module('app', []);
 app.controller('myCtrl', ['$scope', function($scope){
 	$scope.filterBy = ''
 
-	$scope.setFilter(){
+	$scope.setFilter = function(){
 		//set the $scope.filterBy according to what was clicked.
 	}
 
