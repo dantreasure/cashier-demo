@@ -1,6 +1,12 @@
 var app = angular.module('app', []);
 
 app.controller('myCtrl', ['$scope', function($scope){
+	$scope.filterBy = ''
+
+	$scope.setFilter(){
+		//set the $scope.filterBy according to what was clicked.
+	}
+
 	$scope.transactions = [
 		{
 			title: 'Sloppy Joe',
