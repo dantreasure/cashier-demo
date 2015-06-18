@@ -15,7 +15,7 @@
 			    <th>Cost</th>
 			    <th>Notes</th>
 			  </tr>
-			  <tr ng-repeat="transaction in transactions">
+			  <tr ng-repeat="transaction in transactions | orderBy: filterBy">
 			    <td>{{ transaction.title }}</td>
 			    <td>{{ transaction.cost }}</td>
 			    <td>{{ transaction.notes }}</td>
